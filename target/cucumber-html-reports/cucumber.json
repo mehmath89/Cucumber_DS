@@ -1,0 +1,137 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 603662511,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on darksky page",
+            "match": {
+              "location": "MainPageSD.getUrl()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6122340253,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SharedSD.setUp()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Check today\u0027s highest and lowest temprature on darksky page",
+        "description": "",
+        "id": "darksky-page-feature;check-today\u0027s-highest-and-lowest-temprature-on-darksky-page",
+        "after": [
+          {
+            "result": {
+              "duration": 239155655,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SharedSD.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 223580236,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I enter a city as Dayton into the search box on the darksky page",
+            "match": {
+              "location": "MainPageSD.sendAValueIntoSearchBox()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 97682257,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click on search button on the darksky page",
+            "match": {
+              "location": "MainPageSD.clickTheSearchBtn()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3036636770,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I got current temperature on the darksky page",
+            "match": {
+              "location": "MainPageSD.gettingCurrentTemp()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1597092702,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I click Today button on the darksky page",
+            "match": {
+              "location": "MainPageSD.clickTodayBtn()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4270279840,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I got highest and lowest temperature and verify them on the darksky page",
+            "match": {
+              "location": "MainPageSD.getHighestAndLowestThenVerify()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 8,
+            "name": "@darksky"
+          }
+        ]
+      }
+    ],
+    "name": "Darksky page feature",
+    "description": "",
+    "id": "darksky-page-feature",
+    "keyword": "Feature",
+    "uri": "MainPage.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@web"
+      }
+    ]
+  }
+]
